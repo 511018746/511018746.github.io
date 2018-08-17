@@ -8,89 +8,68 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            perspective:100px;
+        }
         #warp{
-            width: 700px;
-            height: 300px;
-            /*background: black;*/
-            margin: 100px auto;
+
+            transform-style:preserve-3d;
             position: relative;
-            transform-style:preserve-3d;
-            perspective: 300px;
-            transform: translateZ(-200px);
+            width: 187px;
+            height: 160px;
+            margin:100px auto ;
+            /*transition: 3s;*/
+            animation:text 0.5s infinite;
         }
-
-        #warp .box > div{
+        #warp>div{
             position: absolute;
-            width: 200px;
-            height: 200px;
-            text-align: center;
-            line-height: 200px;
-            opacity: .5;
-            font-size:60px;
-            font-weight: bold;
-
-        }
-        .box{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-top: -100px;
-            margin-left: -100px;
-            width: 200px;
-            height: 200px;
-            transform-style:preserve-3d;
-            transform-origin: center center -100px;
-            transform: rotate3d(-1,1,0,58deg);
-            transition: 3s;
-            backface-visibility:visible;
-        }
-
-
-        #warp .box > div:nth-child(1){
-            background: yellow;
-            transform-origin: center center -100px;
-            transform: rotateY(0deg);
-        }
-        #warp .box > div:nth-child(2){
-            background: skyblue;
-            transform-origin: center center -100px;
-            transform: rotateY(90deg);
-        }
-        #warp .box > div:nth-child(3){
-            background: paleturquoise;
-            transform-origin: center center -100px;
-            transform: rotateZ(0deg);
-            transform: translateZ(-200px);
-        }
-
-        #warp .box > div:nth-child(4){
-            background: paleturquoise;
-            transform-origin: center center -100px;
-            transform: rotateY(-90deg);
-        }
-
-        #warp .box > div:nth-child(5){
+            width: 100px;
+            height: 100px;
             background: red;
-            transform-origin: center center -100px;
-            transform: rotateX(90deg);
+            box-shadow-left:10px 10px 20px 20px grey ;
         }
-        #warp .box > div:nth-child(6){
-            background: pink;
-            transform-origin: center center -100px;
-            transform: rotateX(-90deg);
+        #div1{
+            border: 1px solid red;
+            border-radius: 50%;
+            left: 84px;
+            z-index: 2;
         }
+        #div2{
+            border: 1px solid red;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        #warp>  #div3{
+             transform: rotate(45deg);
+            top: 43px;
+            left: 43px;
+            background: red;
+            z-index: 1;
+            border-bottom-right-radius:10% ;
+        }
+        #warp:hover{
+            transform:translateZ(15px);
+        }
+        @keyframes text  {
+            0%{
+                transform:translateZ(0px);
+            }
+            50%{
+                transform:translateZ(15px);
+            }
+            100%{
+                transform:translateZ(0px);
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div id="warp">
-       <div class="box">
-           <div>1</div>
-           <div>2</div>
-           <div>3</div>
-           <div>4</div>
-           <div>5</div>
-           <div>6</div>
-       </div>
-    </div>
+<div id="warp">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</div>
+
 </body>
 </html>
