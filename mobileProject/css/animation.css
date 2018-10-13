@@ -1,0 +1,152 @@
+/*第一四个方向的动画*/
+/*向上滑*/
+
+.pt-page-moveToTop{
+    animation:moveToTop 0.6s ease both;
+}
+
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+/*向下滑*/
+.pt-page-moveToBottom{
+    animation:moveToBottom 0.6s ease both;
+}
+.pt-page-moveFromTop{
+    animation:moveFromTop 0.6s ease both;
+}
+/*向左滑*/
+.pt-page-moveToLeft{
+    animation:moveToLeft 0.6s ease both;
+}
+.pt-page-moveFromRight{
+        animation:moveFromRight 0.6s ease both;
+}
+/*向右滑*/
+.pt-page-moveToRight{
+    animation:moveToRight 0.6s ease both;
+}
+.pt-page-moveFromLeft{
+    animation:moveFromLeft 0.6s ease both;
+}
+
+
+@keyframes moveToTop {
+    from{}
+    to{
+       transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+
+@keyframes moveToBottom {
+    from{}
+    to{
+        transform: translateY(100%);
+    }
+}
+@keyframes moveFromTop {
+    from{transform: translateY(-100%);}
+    to{}
+}
+
+
+
+@keyframes moveToLeft {
+    from{}
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes moveToRight {
+    from{transform: translateX(100%);}
+    to{}
+}
+
+@keyframes moveToRight {
+    from{}
+    to{
+        transform: translateX(100%);
+    }
+}
+@keyframes moveFromLeft {
+    from{transform: translateX(-100%);}
+    to{transform: translateX(0%);}
+}
+@keyframes moveFromRight {
+    from{transform: translateX(100%);}
+    to{}
+}
+
+
+/*箭头动画*/
+.pt-page-moveIconUp{
+    animation: moveIconUp 1.5s ease both infinite;
+}
+@keyframes moveIconUp {
+ 0%{transform:translateY(100%);opacity: 0; }
+ 50%{ opacity: 1;}
+ 100%{transform:translateY(-100%);opacity: 0;}
+}
+
+/*圆的动画*/
+.pt-page-moveCircle{
+    animation:moveCircle 1.2s ease both ;
+}
+@keyframes moveCircle {
+    0%{transform: translateY(-80%);opacity: 0.1;}
+    5%{transform: translateY(-80%);opacity: 0.3;}
+    35%{transform: translateY(10%);opacity: 0.8;}
+    60%{transform: translateY(-30%);opacity: 0.8;}
+    65%{transform: translateY(-20%);opacity: 0.8;}
+    100%{transform: translateY(0%);opacity: 1;}
+}
+
+/*缩放的动画*/
+.pt-page-scaleUp{
+    animation: scaleUp 0.5s ease both;
+}
+@keyframes scaleUp {
+    from{transform: scale(0.4)}
+    to{}
+}
+
+/*翻转*/
+.pt-page-flipInLEft{
+    animation: flipInLEft 0.6s ease both;
+    transform-origin:50% 50%;
+}
+@keyframes flipInLEft  {
+    from{transform: rotateY(-90deg)}
+    to{}
+}
+
+/*旋转*/
+.pt-page-rotateCubeBottomIn{
+    animation: rotateCubeBottomIn 0.6s ease both;
+    transform-origin: 50% 100%;
+}
+@keyframes rotateCubeBottomIn {
+    from{ transform: translateY(-100%) rotateX(-90deg);}
+    to{}
+}
+
+
+
+.pt-page-rotateCubeTopIn{
+    animation: rotateCubeTopIn 0.6s ease both;
+    transform-origin: 100% 50%;
+}
+
+@keyframes rotateCubeTopIn {
+    0%{translateY(100%) rotateX(-90deg);opacity: 0.3}
+    50%{animation-timing-function: ease-out;transform:translateY(50%) translateZ(-200px) rotateX(-45deg) ;}
+}
