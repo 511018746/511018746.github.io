@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 1;
+    list-style: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    min-width: 970px;
+}
+
+
+nav {
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    top: 10vh;
+    bottom: 10vh;
+    left: 0;
+    z-index: 100;
+}
+nav #min-logo{
+    display: none;
+}
+nav #logo{
+    margin-top: 45px;
+    padding: 0px 20px;
+}
+nav #logo  img{
+    max-width: 100%;
+}
+
+nav ul{
+    margin-top: 60px;
+    text-align: left;
+    height: 48vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+}
+nav ul li{
+    display: block;
+    margin: 25px 0px;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 30px;
+    text-decoration: none!important;
+    transition: .3s;
+}
+
+@keyframes backgroundColor{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: #000000;
+    }
+}
+
+
+nav ul li a:hover{
+    animation:backgroundColor  5s linear ;
+}
+
+nav ul li a em{
+    font-style: normal;
+    margin-left: 5px;
+    font-size: 14px;
+}
+nav ul li:nth-child(1) .fa::before{
+     content: "\f015";
+ }
+nav ul li:nth-child(2) .fa::before{
+    content: "\f007";
+}
+nav ul li:nth-child(3) .fa::before{
+    content: "\f040";
+}
+nav ul li:nth-child(4) .fa::before{
+    content: "\f03e";
+}
+nav ul li:nth-child(5) .fa::before{
+    content: "\f0e0";
+}
+nav ul li i{
+    width: 25px;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+}
+
+#section{
+    width:500vw;
+    height: 100vh;
+    transition: 0.8s;
+}
+.content{
+    height: 100vh;
+    float: left;
+
+}
+
+.content .div{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-size: cover;
+}
+
+/*背景*/
+#section .content:nth-child(1) .div{
+    background-image: url(../img/first_bg.jpg);
+
+}
+#section .content:nth-child(2) .div{
+    background-image: url(../img/second_bg.jpg);
+
+}
+#section .content:nth-child(3) .div{
+    background-image: url(../img/third_bg.jpg);
+
+}
+#section .content:nth-child(4) .div{
+    background-image: url(../img/fourth_bg.jpg);
+}
+#section .content:nth-child(5) .div{
+    background-image: url(../img/fifth_bg.jpg);
+}
+
+.right{
+    position: relative;
+    width: 70%;
+    height: 80%;
+    left: 30%;
+    top: 10%;
+    bottom: 10%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+#first-right{
+    padding:100px;
+    text-align: left;
+    padding-top:13%;
+}
+
+.col-md-3 .img img{
+    margin-top: 15px;
+    border-radius: 30px;
+    max-width: 80%;
+    min-width: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 35px;
+}
+.col-md-9 h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.col-md-9{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 991px) {
+    .col-md-3 .img img{
+        max-width: 195px;
+        float: none;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #first-right{
+        text-align: center;
+    }
+    .right{
+        overflow-y: scroll;
+    }
+}
+
+
+@media (max-width: 792px){
+
+    .first-content {
+        padding: 30px 5px;
+    }
+
+    nav {
+        width: 15vh;
+    }
+
+    #first-right{
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav #min-logo{
+        margin-top: 60px;
+        display: block;
+    }
+    nav #logo{
+        display: none;
+    }
+    nav a em{
+        display: none;
+    }
+    nav ul{
+        text-align: center;
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    nav ul li{
+        margin: 10px 0px;
+    }
+    nav ul li a{
+        padding: 15px 20px;
+    }
+
+    .col-md-3{
+        margin-top: 30px;
+    }
+
+}
+
+
+
+

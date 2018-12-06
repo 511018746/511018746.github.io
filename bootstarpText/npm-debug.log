@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'lesnpm',
+1 verbose cli   'i',
+1 verbose cli   'less' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData lesnpm
+8 silly fetchPackageMetaData i
+9 silly fetchPackageMetaData less
+10 silly fetchNamedPackageData lesnpm
+11 silly mapToRegistry name lesnpm
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'lesnpm',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   escapedName: 'lesnpm',
+14 silly mapToRegistry   name: 'lesnpm',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/lesnpm
+16 silly fetchNamedPackageData i
+17 silly mapToRegistry name i
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'i',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   escapedName: 'i',
+20 silly mapToRegistry   name: 'i',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/i
+22 silly fetchNamedPackageData less
+23 silly mapToRegistry name less
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'less',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'less',
+26 silly mapToRegistry   name: 'less',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/less
+28 verbose request uri https://registry.npmjs.org/lesnpm
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 14:14:17
+31 verbose request id 0eb693eecbec169a
+32 http request GET https://registry.npmjs.org/lesnpm
+33 verbose get https://registry.npmjs.org/i not expired, no request
+34 verbose get https://registry.npmjs.org/less not expired, no request
+35 http 404 https://registry.npmjs.org/lesnpm
+36 verbose headers { date: 'Mon, 18 Jun 2018 06:14:34 GMT',
+36 verbose headers   'content-type': 'application/json',
+36 verbose headers   'content-length': '21',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'set-cookie': [ '__cfduid=d4a0f20e40596d2cd92b76e6fba54a00d1529302474; expires=Tue, 18-Jun-19 06:14:34 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'cf-cache-status': 'MISS',
+36 verbose headers   'cf-ray': '42cb9dd14c69280a-SJC',
+36 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+36 verbose headers   vary: 'accept-encoding, accept',
+36 verbose headers   server: 'cloudflare' }
+37 silly get cb [ 404,
+37 silly get   { date: 'Mon, 18 Jun 2018 06:14:34 GMT',
+37 silly get     'content-type': 'application/json',
+37 silly get     'content-length': '21',
+37 silly get     connection: 'keep-alive',
+37 silly get     'set-cookie': [ '__cfduid=d4a0f20e40596d2cd92b76e6fba54a00d1529302474; expires=Tue, 18-Jun-19 06:14:34 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     'cf-cache-status': 'MISS',
+37 silly get     'cf-ray': '42cb9dd14c69280a-SJC',
+37 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 silly get     vary: 'accept-encoding, accept',
+37 silly get     server: 'cloudflare' } ]
+38 silly fetchPackageMetaData Error: Not found : lesnpm
+38 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+38 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+38 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+38 silly fetchPackageMetaData  error for lesnpm { Error: Not found : lesnpm
+38 silly fetchPackageMetaData     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+38 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+38 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+38 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+38 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+38 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+38 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+38 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+38 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12) pkgid: 'lesnpm', statusCode: 404, code: 'E404' }
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Not found : lesnpm
+43 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+43 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+43 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+43 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+43 verbose stack     at emitTwo (events.js:106:13)
+43 verbose stack     at Request.emit (events.js:191:7)
+43 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+43 verbose stack     at emitOne (events.js:96:13)
+43 verbose stack     at Request.emit (events.js:188:7)
+43 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+44 verbose statusCode 404
+45 verbose pkgid lesnpm
+46 verbose cwd G:\代码\html&css3\第一阶段测试
+47 error Windows_NT 6.1.7601
+48 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "lesnpm" "i" "less"
+49 error node v6.10.3
+50 error npm  v3.10.10
+51 error code E404
+52 error 404 Not found : lesnpm
+53 error 404
+54 error 404 'lesnpm' is not in the npm registry.
+55 error 404 You should bug the author to publish it (or use the name yourself!)
+56 error 404 Note that you can also install from a
+57 error 404 tarball, folder, http url, or git url.
+58 verbose exit [ 1, true ]

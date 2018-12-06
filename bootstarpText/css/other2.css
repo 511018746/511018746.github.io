@@ -1,0 +1,332 @@
+
+.content .right h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.content .right  p {
+    color: #fff;
+    margin-bottom: 30px ;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+.content .right  .img img {
+    max-width: 60%;
+    min-width: 60%;
+    overflow: hidden;
+    text-align: center ;
+    vertical-align: middle;
+}
+/*第二页*/
+.text-sec2{
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+@media (max-width: 1200px) {
+    .content .right  .img img {
+        max-width: 80%;
+        min-width: 80%;
+    }
+}
+@media (max-width: 991px) {
+    .content .right  .img img {
+        max-width: 60%;
+        min-width: 60%;
+    }
+    .text-sec2{
+        height: 0%;
+    }
+}
+
+
+
+
+
+#sec3 .right .row {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#sec3 .right .row .row-btn {
+    margin-bottom: 5px;
+}
+#sec3 .right .row h2 {
+    border-bottom: 2px solid #fff;
+    margin: 20px 0 15px 0;
+}
+#sec3 .right .row img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 60%;
+    margin-top: 25px;
+}
+
+#sec3 .right .tow-row{
+    width: 100%;
+
+
+    display: block;
+}
+
+
+
+/*第四页*/
+#sec4  .right{
+    overflow-y: scroll;
+}
+#sec4 .right img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin:5px  0;
+
+}
+
+#sec4 .right .item{
+    position: relative;
+}
+#sec4 .right .item:hover  .hover-item{
+    opacity: .7;
+    visibility: visible;
+}
+#sec4 .right .hover-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    color: #fff;
+    background-color: rgba(0,0,0,0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.8s;
+}
+#sec4 .right .hover-item h2{
+    font-size: 18px;
+    margin-top: 20px;
+}
+#sec4 .right .hover-item .text-item{
+    transform: translateY(-50%);
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    padding: 30px;
+
+}
+
+/*居中大图*/
+.img-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: black;
+    opacity: 0;
+    transition: all .8s;
+    display: none;
+}
+
+.center-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: all .7s;
+    display: none;
+}
+
+.big-img{
+    position: relative;
+    width: 666px;
+    height: 451px;
+    margin: 0 auto;
+    display: block;
+    opacity: 1;
+    z-index: 90000;
+    background: white;
+}
+
+.big-img img{
+    width: 666px;
+    height: 451px;
+    border: 10px solid white;
+    border-radius: 5px;
+    /*opacity: 0;*/
+
+}
+
+@keyframes myfirst{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*左右点击按钮*/
+.center-img  .left-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.big-img .left-right .left{
+    width: 40%;
+    float: left;
+    left: 0;
+    background: url(../img/prev.png) left 50% no-repeat;
+    height: 100%;
+   opacity: 0;
+    transition: opacity 0.6s;
+}
+.big-img .left-right .right{
+    width: 60%;
+    height: 100%;
+    float: left;
+    top: 0;
+    left: 0;
+    background: url(../img/next.png) right 50% no-repeat;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.6s;
+}
+.big-img .left-right .left:hover,.big-img .left-right .right:hover{
+    opacity: 1;
+}
+
+
+
+/*图片信息 和 关闭*/
+.img-bottom{
+    position: absolute;
+    width: 666px;
+    bottom:-45px;
+}
+.img-bottom  .img-number{
+    width: 75%;
+    margin-top: 15px;
+    margin-left: 5px;
+    display: block;
+    text-align: left;
+    padding-bottom: 1em;
+    font-size: 13px;
+    color: #999999;
+    float: left;
+}
+
+.img-bottom .img-close .close{
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(../img/close.png) top right no-repeat;
+    text-align: right;
+    opacity: 0.7;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: 0.8s;
+}
+.img-bottom .img-close .close:hover{
+    opacity: 1;
+}
+
+#sec5 .input1{
+    float: right;
+    width: 50%;
+    margin:10px 20% 10px 0;
+
+}
+#sec5 .textarea{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20%;
+    height: 20%;
+    width: 50%;
+}
+textarea  .form-control{
+    width: 70%;
+    height: 150px;
+}
+.in1{
+    padding-top: 50px;
+}
+.sub{
+    float: right;
+    width: 49%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+.audiojs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background: #555555;
+}
+
+
+.row-5{
+    text-align: center;
+  }
+
+@media (max-width: 1200px) {
+    #sec5 .input1{
+        width: 70%;
+    }
+    #sec5 .textarea{
+        width: 70%;
+    }
+    #sec5 .sub{
+        width: 68%;
+    }
+
+}
+@media (max-width: 991px) {
+    #sec3 .right .row #top-img img {
+        margin-top: 50px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .tow-row{
+        height: 50px;
+    }
+}
+@media (max-width: 768px) {
+    #sec3 .right .row {
+        text-align: center;
+    }
+    #sec4 .right .hover-item .text-item h2{
+        font-size: 32px;
+    }
+
+    .img-bottom .img-close .close:hover{
+        opacity: 1;
+    }
+    .audiojs{
+        display: none;
+    }
+}
